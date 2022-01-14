@@ -16,9 +16,9 @@ def size_in_kb(some_object: Any) -> str:
     и возвращает строку
 
     :param some_object: любой объект
-    :return: стока вида "1.23 кб"
+    :return: строка вида "1.23 кб"
     """
-    result = None
+    result = str(round(float(getsizeof(some_object)), 2))
     return result
 
 
